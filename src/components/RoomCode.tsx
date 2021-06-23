@@ -12,7 +12,7 @@ export function RoomCode({ code }: RoomCodeProps) {
   }
 
   return (
-    <button className="room-code">
+    <button className="room-code" onClick={copyRoomCodeToClipboard}>
       <div>
         <img src={copyImg} alt="Copy room code" />
       </div>
